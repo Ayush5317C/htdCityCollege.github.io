@@ -28,4 +28,37 @@
     *{
         font-size: 90%;
     }
+    .mainLogo{
+        width: 50px;
+        height: 50px;
+    }
+    .landingContent{
+        width: 80%;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footerInfo{
+        margin: 1rem 0 0 0;
+    }
+    .fa-facebook{
+        width: 26px;
+        height: 26px;
+    }
+    .footerInfo span{
+        font-size: 0.95rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    *{
+        font-size: 80%;
+    }
+    .fa-facebook{
+        width: 23px;
+        height: 23px;
+    }
 }
