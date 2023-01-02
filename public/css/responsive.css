@@ -1,0 +1,31 @@
+@media screen and (max-width: 767px) {
+    .menuIcon{
+        display: block;
+    }
+    .navMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: var(--navHeight);
+        left: 0;
+        width: 100%;
+        height: 0;
+        z-index: 99;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: 600;
+        background-color: white;
+        overflow: hidden;
+        transition: 0.7s;
+    }
+    .navMenu a{
+        margin: 0.5rem 0;
+        color: var(--textColor);
+    }
+}
+@media screen and (max-width: 620px){
+    *{
+        font-size: 90%;
+    }
+}
