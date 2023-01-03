@@ -1,64 +1,99 @@
 @media screen and (max-width: 767px) {
-    .menuIcon{
-        display: block;
-    }
-    .navMenu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        top: var(--navHeight);
-        left: 0;
-        width: 100%;
-        height: 0;
-        z-index: 99;
-        font-size: 1.8rem;
-        text-align: center;
-        font-weight: 600;
-        background-color: white;
-        overflow: hidden;
-        transition: 0.7s;
-    }
-    .navMenu a{
-        margin: 0.5rem 0;
-        color: var(--textColor);
-    }
+  .menuIcon {
+    display: block;
+  }
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: var(--navHeight);
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 99;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+  .navMenu a {
+    margin: 0.5rem 0;
+    color: var(--textColor);
+  }
+  .collegeEventDesc {
+    flex-direction: column;
+  }
+  .eventTopContent {
+    padding: 0;
+    width: 100%;
+  }
+  .eventTopImg {
+    min-width: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .event {
+    flex-direction: column;
+  }
+  .date {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+  }
+  .eventInfoContainer{
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+  }
+  .mainEvents{
+    width: 90%;
+  }
+  .readMoreBtn{
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-@media screen and (max-width: 620px){
-    *{
-        font-size: 90%;
-    }
-    .mainLogo{
-        width: 50px;
-        height: 50px;
-    }
-    .landingContent{
-        width: 80%;
-        top: 50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-    }
-    footer{
-        flex-direction: column;
-    }
-    .footerInfo{
-        margin: 1rem 0 0 0;
-    }
-    .fa-facebook{
-        width: 26px;
-        height: 26px;
-    }
-    .footerInfo span{
-        font-size: 0.95rem;
-    }
+@media screen and (max-width: 620px) {
+  * {
+    font-size: 90%;
+  }
+  .mainLogo {
+    width: 50px;
+    height: 50px;
+  }
+  .landingContent {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .footerInfo {
+    margin: 1rem 0 0 0;
+  }
+  .fa-facebook {
+    width: 26px;
+    height: 26px;
+  }
+  .footerInfo span {
+    font-size: 0.95rem;
+  }
+  .mainEvents{
+    width: 98%;
+  }
 }
 @media screen and (max-width: 300px) {
-    *{
-        font-size: 80%;
-    }
-    .fa-facebook{
-        width: 23px;
-        height: 23px;
-    }
+  * {
+    font-size: 80%;
+  }
+  .fa-facebook {
+    width: 23px;
+    height: 23px;
+  }
 }

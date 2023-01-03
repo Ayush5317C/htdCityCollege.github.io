@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgb(245, 245, 245);
 }
 .mainLogo {
   width: 60px;
@@ -32,7 +33,7 @@
 }
 nav,
 footer {
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,6 +82,7 @@ a {
 }
 
 /* Navbar Ending */
+/* Main Page Body Starting */
 .landingArea {
   position: relative;
   background: url("../images/indexBackground.jpg") no-repeat center center/cover;
@@ -132,12 +134,15 @@ a {
   background-color: white;
   color: var(--textColor);
 }
+/* Main Page Body Ending */
+/* Footer starting */
 #footerSection {
   display: flex;
   justify-content: center;
+  background: rgb(230, 230, 230);
 }
 footer {
-  height: var(--footerHeight);
+  min-height: var(--footerHeight);
 }
 .socialMediaLink {
   display: flex;
@@ -210,4 +215,112 @@ footer {
 }
 .fa-envelope {
   font-size: 1.05rem !important;
+}
+/* Footer Ending */
+/* Events page css */
+.collegeEventDesc{
+  display: flex;
+  width: 80%;
+  margin: 3rem auto;
+}
+.eventTopImg{
+  background: url("../images/eventsImg.jpg") no-repeat center center/cover;
+  width: 500px;
+  min-width: 280px;
+  min-height: 300px;
+}
+.eventTopContent{
+  width: 700px;
+  padding: 0 0 0 4rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.eventHead{
+  color: var(--textColor);
+  font-size: 3rem;
+  margin: 5rem 0 -2rem 3rem;
+}
+.mainEvents{
+  width: 80%;
+  margin: auto;
+}
+.events{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+.event{
+  width: 100%;
+  display: flex;
+  color: var(--textColor);
+  margin: 1.5rem 0;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+}
+.date{
+  width: 30%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  background: #0e2442;
+  color: white;
+  transition: 0.5s;
+}
+.eventInfoContainer{
+  position: relative;
+  padding: 1rem;
+  padding-bottom: 80px;
+  width: 70%;
+  transition: 0.5s;
+  border-radius: 0 5px 5px 0;
+}
+.eventAbstract{
+  font-size: 1rem;
+  text-align: justify;
+}
+.event:hover .date{
+  color: var(--textColor);
+  background: white;
+}
+.event:hover .eventInfoContainer{
+  color: white;
+  background: var(--textColor);
+}
+.event:hover .readMoreBtn{
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
+.eventAbstract{
+  margin-top: 0.5rem;
+  min-height: 70px;
+  font-size: 1rem;
+}
+.eventTitle{
+  font-size: 1.8rem;
+}
+.day{
+  font-size: 5rem;
+}
+.month{
+  font-size: 2rem;
+}
+.readMoreBtn{
+  position: absolute;
+  bottom: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #dbdbdb;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+.readMoreBtn:hover{
+  transition: 0.5s;
+  background: white !important;
+  color: var(--textColor) !important;
 }
